@@ -25,8 +25,9 @@
           alt="login-icon"
           style="height: 7rem"/>
       </div>
-      <div class="text-center fs-1 fw-bold">Iniciar Sesión</div>
-      <div class="input-group mt-4">
+        <form action="sesion.php" method="POST" autocomplete="off">
+        <div class="text-center fs-1 fw-bold">Iniciar Sesión</div>
+        <div class="input-group mt-4">
         <div class="input-group-text bg-info">
           <img
             src="assets/username-icon.svg"
@@ -34,13 +35,10 @@
             style="height: 1rem"
           />
         </div>
-        <input
-          class="form-control bg-light"
-          type="text"
-          placeholder="Nombre de Usuario"
-        />
-      </div>
-      <div class="input-group mt-1">
+        <label for="exampleInputPassword1" class="form-label blanco"></label>
+                        <input type="text" class="form-control bg-light " name="usuario" required placeholder="Nombre de usuario">
+        </div>
+                        <div class="input-group mt-1">
         <div class="input-group-text bg-info">
           <img
             src="assets/password-icon.svg"
@@ -48,41 +46,19 @@
             style="height: 1rem"
           />
         </div>
-        <input
-          class="form-control bg-light"
-          type="password"
-          placeholder="Contraseña"
-        />
-      </div>
-      <div class="d-flex justify-content-around mt-1">
-        <div class="d-flex align-items-center gap-1">
-          <input class="form-check-input" type="checkbox" />
-          <div class="pt-1" style="font-size: 0.9rem">Recordarme</div>
+        <label for="exampleInputPassword1" class="form-label blanco"></label>
+                        <input type="text" class="form-control bg-light " name="contraseña" required placeholder="Contraseña">
         </div>
-        <div class="pt-1">
-          <a
-            href="#"
-            class="text-decoration-none text-info fw-semibold fst-italic"
-            style="font-size: 0.9rem"
-            >Olvidaste tu contraseña?</a
-          >
-        </div>
-      </div>
-      <div class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm">
-        Iniciar Sesión
-      </div>
-      <div class="d-flex gap-1 justify-content-center mt-1">
-        <div>No tienes cuenta?</div>
-        <a href="#" class="text-decoration-none text-info fw-semibold"
-          >Registrarte</a
-        >
-      </div>
-      <div class="p-3">
+                        <button type ="submit" class="btn btn-info text-white w-100 mt-4 fw-semibold shadow-sm" value="Sesion" name="Sesion">
+                        Iniciar Sesión
+                        </button>
+                        <div class="p-3">
         <div class="border-bottom text-center" style="height: 0.9rem">
-          <span class="bg-white px-3"><a href="../index.html">Ir a Incio</a></span>
+          <a href="../index.html" class="bg-white px-3">Ir a Inicio</a>
         </div>
       </div>
-      
-    </div>
+                      </div>
+
+        </form>
   </body>
 </html>
